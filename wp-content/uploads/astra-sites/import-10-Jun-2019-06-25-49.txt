@@ -1,0 +1,37 @@
+
+Started Import Process
+# System Details: 
+Debug Mode 		: Disabled
+Operating System 	: Darwin
+Software 		: Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.3.1 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0
+MySQL version 		: 5.7.25
+XML Reader 		: Yes
+PHP Version 		: 7.3.1
+PHP Max Input Vars 	: 1000
+PHP Max Post Size 	: 8M
+PHP Extension GD 	: Yes
+PHP Max Execution Time 	: 30
+Max Upload Size 	: 8 MB
+Memory Limit 		: Current memory limit 40M. We recommend setting memory to at least 64M.
+Timezone 		: 0
+
+-----
+
+Importing Started! - 06:27:49 UTC
+---
+
+WHY IMPORT PROCESS CAN FAIL? READ THIS - 
+https://wpastra.com/docs/?p=1314&utm_source=demo-import-panel&utm_campaign=import-error&utm_medium=wp-dashboard
+
+---
+
+Inserted WP Form 6
+Imported Customizer Settings {"astra-settings":{"astra-addon-auto-version":"1.8.1","theme-auto-version":"1.8.1","site-sidebar-layout":"right-sidebar","woocommerce-content-layout":"default","header-main-rt-section":"woocommerce","body-font-family":"'Quicksand', sans-serif","body-font-variant":"","body-font-weight":"400","headings-font-family":"'Quicksand', sans-serif","headings-font-weight":"500","header-main-layout-width":"content","font-size-body":{"desktop":"15","tablet":"","mobile":"","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"theme-color":"#75c32c","link-color":"#75c32c","text-color":"#4e5768","link-h-color":"#75c32c","shop-grids":{"desktop":"3","tablet":"3","mobile":"2"},"shop-hover-style":"","shop-product-structure":["category","title","ratings","price"],"footer-bg-obj":{"background-color":"#f7f7f8","background-image":"","background-repeat":"repeat","background-position":"center center","background-size":"auto","background-attachment":"scroll"},"footer-sml-divider-color":"#eaeaea","footer-color":"#4e5768","footer-link-color":"rgba(117,195,44,0.65)","footer-sml-section-1-credit":"Copyright \u00a9 [current_year] [site_title] | <a href=\"#\">Credits<\/a>","footer-sml-section-2":"custom","footer-sml-section-2-credit":"Powered by <a href=\"#\">[site_title]<\/a>","footer-link-h-color":"#75c32c","footer-sml-layout":"footer-sml-layout-2","transparent-menu-color-responsive":{"desktop":"#ffffff","tablet":"#4e5768","mobile":""},"transparent-menu-h-color-responsive":{"desktop":"#75c32c","tablet":"","mobile":""},"hide-custom-menu-mobile":false,"header-display-outside-menu":true,"mobile-header-toggle-btn-style":"fill","mobile-header-toggle-btn-style-color":"#75c32c","font-size-h2":{"desktop":"3","tablet":"2.5","mobile":"2","desktop-unit":"em","tablet-unit":"em","mobile-unit":"em"},"font-size-h1":{"desktop":"4","tablet":"3","mobile":"2","desktop-unit":"em","tablet-unit":"em","mobile-unit":"em"},"transparent-submenu-bg-color-responsive":{"desktop":"","tablet":"","mobile":""},"transparent-submenu-color-responsive":{"desktop":"#4e5768","tablet":"","mobile":""},"transparent-submenu-h-color-responsive":{"desktop":"#75c32c","tablet":"","mobile":""},"different-retina-logo":true,"ast-header-retina-logo":"https:\/\/websitedemos.net\/plant-store-02\/wp-content\/uploads\/sites\/410\/2019\/01\/logo1@2x-free-img-1.png","ast-header-responsive-logo-width":{"desktop":"58","tablet":"60","mobile":"42"},"display-site-title":true,"different-transparent-logo":true,"transparent-header-logo":"https:\/\/websitedemos.net\/plant-store-02\/wp-content\/uploads\/sites\/410\/2019\/01\/logo-free-img-1.png","different-transparent-retina-logo":true,"transparent-header-retina-logo":"https:\/\/websitedemos.net\/plant-store-02\/wp-content\/uploads\/sites\/410\/2019\/01\/logo@2x-free-img-1.png","button-color":"#ffffff","button-h-color":"#ffffff","button-bg-color":"#75c32c","button-bg-h-color":"#4e5768","button-radius":50,"button-h-padding":25,"button-v-padding":10,"site-content-layout":"boxed-container","display-site-tagline":false,"transparent-header-logo-width":{"desktop":"58","tablet":"60","mobile":"50"},"transparent-header-color-site-title-responsive":{"desktop":"#ffffff","tablet":"","mobile":""},"font-size-site-title":{"desktop":"20","tablet":"","mobile":"20","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"},"transparent-content-section-text-color-responsive":{"desktop":"#4e5768","tablet":"","mobile":""},"transparent-content-section-link-color-responsive":{"desktop":"rgba(78,87,104,0.9)","tablet":"","mobile":""},"transparent-content-section-link-h-color-responsive":{"desktop":"#75c32c","tablet":"","mobile":""},"transparent-header-on-devices":"desktop","transparent-header-enable":false,"transparent-header-disable-index":true,"transparent-header-disable-page":false,"transparent-header-disable-posts":true,"transparent-header-disable-woo-products":true,"single-product-sidebar-layout":"no-sidebar","transparent-header-bg-color-responsive":{"desktop":"rgba(0,0,0,0.2)","tablet":"","mobile":""},"primary-submenu-item-border":true,"font-size-h3":{"desktop":"22","tablet":"","mobile":"","desktop-unit":"px","tablet-unit":"px","mobile-unit":"px"}},"custom-css":""}
+Imported - Widgets {"sidebar-1":{"search-2":{"title":""},"recent-posts-2":{"title":"","number":5},"recent-comments-2":{"title":"","number":5},"archives-2":{"title":"","count":0,"dropdown":0},"categories-2":{"title":"","count":0,"hierarchical":0,"dropdown":0},"meta-2":{"title":""}}}
+Complete 
+Batch Process Started!
+Astra Sites - Importing Images for Blog name 'EA Wellness+' (1)
+---- Processing Images from Widgets -----
+---- Processing WordPress Posts / Pages - for "Gutenberg" ----
+---- Processing MISC ----
+Batch Process Complete!

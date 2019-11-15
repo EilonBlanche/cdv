@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<h1 id="kirki-helpers">kirki-helpers</h1>
+
+<p>Helper scripts for theme authors.</p>
+
+<p>If you&#8217;re starting a new theme based on <a href="https://github.com/Automattic/_s">underscores</a>, we recommend you start using our fork from <a href="https://github.com/aristath/_s">https://github.com/aristath/_s</a> as it already includes both of the methods described below, and also has 2 example settings for typography.</p>
+
+<h2 id="integratingkirkiinyourthemes">Integrating Kirki in your themes</h2>
+
+<p>If you want to use Kirki in your themes, it is not recommended to include the plugin files in your theme.
+By recommending your users install Kirki as a plugin they can get bugfixes easier and faster.
+A lot of themes use TGMPA to recommend installing plugins, but if you only require Kirki then using TGMPA might be an overkill.
+In that case, you can use the <a href="https://github.com/aristath/kirki-helpers/blob/master/include-kirki.php">include-kirki.php</a> file to recommend the installation of Kirki.</p>
+
+<p>When the user visits the customizer, if they don’t have Kirki installed they will see a button prompting them to install it.
+You can configure the description in that file and make sure you change the textdomain in that file from <code>textdomain</code> to the actual textdomain your theme uses.</p>
+
+<h3 id="usage:">Usage:</h3>
+
+<p>In your theme&#8217;s <code>functions.php</code> file add the following line, changing <code>'/inc/include-kirki.php'</code> to the path where the file is located:</p>
+
+<pre><code class="php">require_once get_template_directory() . '/inc/include-kirki.php';
+</code></pre>
+
+<h2 id="makingsurethatoutputworkswhenkirkiisnotinstalled">Making sure that <code>output</code> works when Kirki is not installed</h2>
+
+<p>If you use the <code>output</code> argument in your fields, Kirki will automatically generate the CSS needed for your theme, as well as any Google-Fonts scripts.
+In order to make sure that user styles will continue to work even if they uninstall the Kirki plugin, you can include the <a href="https://github.com/aristath/kirki-helpers/blob/master/class-my-theme-kirki.php"><code>class-my-theme-kirki</code></a> file.</p>
+
+<h3 id="usage:">Usage:</h3>
+
+<ul>
+<li>Rename the file to use the actual name of your theme.
+Example: <code>twentysixteen-kirki.php</code>.</li>
+<li>Inside the file, search for <code>My_Theme_Kirki</code> and replace it using your theme-name as a prefix.
+Example: <code>Twentysixteen_Kirki</code>.</li>
+<li>In your theme&#8217;s <code>functions.php</code> file add the following line, changing <code>'/inc/class-my-theme-kirki'</code> to the path where the file is located:</li>
+</ul>
+
+<pre><code class="php">require_once get_template_directory() . '/inc/class-my-theme-kirki.php';
+</code></pre>
+
+<p>Once you do the above, instead of using <code>Kirki</code> to add your config, panels, sections &amp; fields as documented in the <a href="https://kirki.org">Kirki Documentation</a> examples, you will have to use your own class.</p>
+
+<p>Example:</p>
+
+<h4 id="good:">Good:</h4>
+
+<pre><code class="php">Twentysixteen_Kirki::add_config( 'my_theme', array(
+	'capability'    =&gt; 'edit_theme_options',
+	'option_type'   =&gt; 'theme_mod',
+) );
+</code></pre>
+
+<h4 id="bad:">Bad:</h4>
+
+<pre><code class="php">Kirki::add_config( 'my_theme', array(
+	'capability'    =&gt; 'edit_theme_options',
+	'option_type'   =&gt; 'theme_mod',
+) );
+</code></pre>
+
+<p>The <code>Twentysixteen_Kirki</code> class will act as a proxy to the <code>Kirki</code> class.
+If the Kirki plugin is installed, then it will be used to add your panels, sections, fields etc.
+However if the plugin is not installed, the <code>Twentysixteen_Kirki</code> will make sure that all your CSS and google-fonts will still work.</p>
+
+</body>
+</html>
+
